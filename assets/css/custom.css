@@ -1,0 +1,29 @@
+table.regTable{
+    font-family: "微軟正黑體";
+    width: 100%;
+}
+
+table.regTable th{
+    padding: 50px 0;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.regTable td{
+    text-align: left;
+    font-size: 18px;
+}
+
+table.regTable input{
+    width: 50%;
+}
+
+button.regButton{
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+p{
+    font-size: 16px;
+}

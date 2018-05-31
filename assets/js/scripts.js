@@ -17,7 +17,8 @@ jQuery(document).ready(function() {
     });
 	
 	/*
-	    Slider 2
+		Slider 2
+		這裡是主頁面的輪播照片array
 	*/
 	$('.slider-2-container').backstretch([
 	  "assets/img/slider/5.jpg"
