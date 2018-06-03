@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Andia - Responsive Agency Template</title>
+        <title>輔仁大學交換生系統</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
@@ -80,7 +80,7 @@
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-								<i class="fa fa-dashboard"></i><br>管理專區 <span class="caret"></span>
+								<i class="fa fa-dashboard"></i><br>管理者專區 <span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="pricing-tables.html">登入</a></li>
@@ -97,12 +97,51 @@
                 <div class="row">
                     <div class="col-sm-12 wow fadeIn">
                         <i class="fa fa-dollar"></i>
-                        <h1>Pricing Tables /</h1>
-                        <p>Some pricing tables for your products or services</p>
+                        <h1>管理者登入</h1>
+                        <p>Administrator Login</p>
                     </div>
                 </div>
             </div>
-        </div>
+		</div>
+		
+		<!-- Contact Us -->
+		<div class="contact-us-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7 contact-form wow fadeInLeft">
+						<p>
+							輔大同仁請使用
+							<a href="">LDAP </a>進行
+						</p>
+						<p>申請資料/
+						帳號管理/
+						交換學校/
+						審查設定/
+						修改記錄/
+						開放時間</p>
+						<form role="form" action="assets/sendmail.php" method="post">
+							<div class="form-group">
+								<label for="contact-name">帳號</label>
+								<input type="text" name="name" placeholder="輸入LDAP帳號..." class="contact-name" id="contact-name">
+							</div>
+							<div class="form-group">
+								<label for="contact-email">密碼</label>
+								<input type="text" name="passport" placeholder="輸入密碼..." class="contact-email" id="contact-email">
+							</div>
+							<button type="submit" class="btn">確定</button>
+						</form>
+					</div>
+					<div class="col-sm-5 contact-address wow fadeInUp">
+						<h3>We Are Here</h3>
+						<div class="map"></div>
+						<h3>Address</h3>
+						<p>Via Principe Amedeo 9
+							<br> 10100, Torino, TO, Italy</p>
+						<p>Phone: 0039 333 12 68 347</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
         <!-- Pricing 1 -->
         <div class="pricing-1-container">
