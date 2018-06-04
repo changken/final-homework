@@ -1,29 +1,59 @@
+/*all*/
+p{
+    font-size: 16px;
+}
+
+/*regTable style*/
 table.regTable{
     font-family: "微軟正黑體";
     width: 100%;
 }
 
-table.regTable th{
-    padding: 50px 0;
+table.regTable tr th{
+    padding: 30px 0;
     font-size: 30px;
     text-align: center;
     vertical-align: middle;
 }
 
-table.regTable td{
+table.regTable tr td{
     text-align: left;
     font-size: 18px;
+    padding: 20px 5px;
 }
 
-table.regTable input{
+table.regTable input[type=text]{
+    border-radius: 5px;
+    font-size: 21px;
+    width: 50%;
+    padding: 15px;
+}
+
+table.regTable input[type=text]:hover{
+    width: 100%;
+    height: 100%;
+}
+
+table.regTable input[class~=score]{
+    width: 100px;
+}
+
+table.regTable input[class~=score]:hover{
+    width: 200px;
+}
+
+table.regTable select{
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+table.regTable input[type=file]{
+    border-radius: 5px;
     width: 50%;
 }
 
 button.regButton{
     font-size: 18px;
     border-radius: 2px;
-}
-
-p{
-    font-size: 16px;
 }

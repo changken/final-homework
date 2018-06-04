@@ -122,76 +122,116 @@
 
 		<div class="portfolio-container">
 			<div class="container">
-				<form action="" method="POST" enctype="multipart/form-data">
+				<form action="" method="POST">
 					<table class="table table-striped regTable">
 						<tr>
-							<th colspan="2">1.填寫基本資料</th>
+							<th colspan="2">2.填寫校內成績</th>
 						</tr>
 						<tr>
-							<td>學號:
-								<input type="text" name="sid" class="form-control">
-							</td>
-							<td>姓名:
-								<input type="text" name="name" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>身份證字號/居留證號:
-								<input type="text" name="uid" class="form-control">
-							</td>
-							<td>英文姓名:
-								<input type="text" name="englishName" class="form-control" placeholder="First name, Last name">
-							</td>
-						</tr>
-						<tr>
-							<td>國籍:
-								<select name="country">
-									<option value="tw">台灣</option>
-									<option value="cn">中國</option>
-									<option value="hk">香港特別行政區</option>
-									<option value="mo">澳門特別行政區</option>
-									<option value="mo">聖多美普林西比</option>
+							<td>系所:
+								<select name="department">
+									<option value="im">資訊管理學系</option>
+									<option value="mba">企業管理學系</option>
+									<option value="accounting">會計學系</option>
 								</select>
 							</td>
-							<td>性別:
+							<td>學制:
+								<select name="schoolSystem">
+									<option value="bachelor">學士班</option>
+									<option value="master">碩士班</option>
+									<option value="docter">博士班</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>年級:
+								<select name="grade">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</td>
+							<td>雙主修:
+								<select name="doubleMajor">
+									<option value="none">None</option>
+									<option value="im">資訊管理學系</option>
+									<option value="mba">企業管理學系</option>
+									<option value="accounting">會計學系</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>輔系:
+								<select name="supportMajor">
+									<option value="none">None</option>
+									<option value="im">資訊管理學系</option>
+									<option value="mba">企業管理學系</option>
+									<option value="accounting">會計學系</option>
+								</select>
+							</td>
+							<td>學程:
+								<select name="packageProcess">
+									<option value="none">None</option>
+									<option value="medicine">醫學工程學分學程</option>
+									<option value="E-commerce">電子商務學分學程</option>
+									<option value="globalManagement">國際企業管理學分學程</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">是否同時申請其他交換學生計畫:
+								<select name="otherExchangePlan">
+									<option value="Yes">是</option>
+									<option value="No">否</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">是否同時申請研究所:
+								<select name="applyAtSameTime">
+									<option value="Yes">是</option>
+									<option value="No">否</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">歷年平均成績(四捨五入取至小數點第二位):
+								<input type="text" name="averageScore" class="form-control score" maxlength="5">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								托福總成績(TOEFLIBT):
+								<input type="text" name="toefl" class="form-control score">(79~120)
+							</td>
+							<td style="width:50%;">
+								聽:
+								<input type="text" name="toeflListen" class="form-control score" placeholder="(0~30)">
+								<br> 說:
+								<input type="text" name="toeflSpeaking" class="form-control score" placeholder="(0~30)">
+								<br> 讀:
+								<input type="text" name="toeflReading" class="form-control score" placeholder="(0~30)">
+								<br> 寫:
+								<input type="text" name="toeflWriting" class="form-control score" placeholder="(0~30)">
 								<br>
-								<div class="radio">
-									<input type="radio" name="gender" value="male">男
-								</div>
-								<div class="radio">
-									<input type="radio" name="gender" value="female">女
-								</div>
 							</td>
 						</tr>
 						<tr>
-							<td>生日:
-								<input type="text" name="birthbay" class="form-control">
+							<td>
+								雅思總成績(IETLS):
+								<input type="text" name="ietls" class="form-control score">
 							</td>
-							<td>手機電話:
-								<input type="text" name="phone" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>電子郵件:
-								<input type="text" name="email" class="form-control">
-							</td>
-							<td>通信地址:
-								<input type="text" name="address" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">書審資料上傳:
-								<input type="file" name="introduct" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">中文歷年成績單證明:
-								<input type="file" name="transcript" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">語言檢定證明:
-								<input type="file" name="languageCertificate" class="form-control">
+							<td style="width:50%;">
+								聽:
+								<input type="text" name="ietlsListen" class="form-control score" placeholder="(0~30)">
+								<br> 說:
+								<input type="text" name="ietlsSpeaking" class="form-control score" placeholder="(0~30)">
+								<br> 讀:
+								<input type="text" name="ietlsReading" class="form-control score" placeholder="(0~30)">
+								<br> 寫:
+								<input type="text" name="ietlsWriting" class="form-control score" placeholder="(0~30)">
+								<br>
 							</td>
 						</tr>
 						<tr>
@@ -200,7 +240,6 @@
 							</td>
 						</tr>
 					</table>
-					<p class="text-danger text-left">*僅限於PDF檔才能上傳</p>
 				</form>
 			</div>
 		</div>
