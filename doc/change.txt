@@ -1,4 +1,0 @@
-2018.5.31
-1.修改navbar，並調整一些icon，以符合功能的特色(icon use fontawesome)。
-2.申請交換學生的註冊表單已經先寫好了，後續再調整css。
-3.首頁的輪播效果好像是assets/js/script.js的side2部分控制。

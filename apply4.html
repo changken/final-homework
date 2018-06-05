@@ -122,85 +122,52 @@
 
 		<div class="portfolio-container">
 			<div class="container">
-				<form action="apply2.html" method="POST" enctype="multipart/form-data">
+				<form action="index-2.html" method="POST">
 					<table class="table table-striped regTable">
 						<tr>
-							<th colspan="2">1.填寫基本資料</th>
+							<th colspan="4">4.選填志願序</th>
 						</tr>
 						<tr>
-							<td>學號:
-								<input type="text" name="sid" class="form-control">
-							</td>
-							<td>姓名:
-								<input type="text" name="name" class="form-control">
-							</td>
+							<td>學校(國家)</td>
+							<td>志願序</td>
 						</tr>
 						<tr>
-							<td>身份證字號/居留證號:
-								<input type="text" name="uid" class="form-control">
-							</td>
-							<td>英文姓名:
-								<input type="text" name="englishName" class="form-control" placeholder="First name, Last name">
-							</td>
-						</tr>
-						<tr>
-							<td>國籍:
-								<select name="country">
-									<option value="tw">台灣</option>
-									<option value="cn">中國</option>
-									<option value="hk">香港特別行政區</option>
-									<option value="mo">澳門特別行政區</option>
-									<option value="mo">聖多美普林西比</option>
+							<td>匹茲堡州立大學Pittsburg State University(美國)</td>
+							<td>
+								<select name="orders[0]">
+									<option value="1">第一志願</option>
+									<option value="2">第二志願</option>
+									<option value="3">第三志願</option>
 								</select>
 							</td>
-							<td>性別:
-								<br>
-								<div class="radio">
-									<input type="radio" name="gender" value="male">男
-								</div>
-								<div class="radio">
-									<input type="radio" name="gender" value="female">女
-								</div>
+						</tr>
+						<tr>
+							<td>(自費)天普大學Temple University(美國)</td>
+							<td>
+								<select name="orders[1]">
+									<option value="1">第一志願</option>
+									<option value="2">第二志願</option>
+									<option value="3">第三志願</option>
+								</select>
 							</td>
 						</tr>
 						<tr>
-							<td>生日:
-								<input type="text" name="birthbay" class="form-control">
-							</td>
-							<td>手機電話:
-								<input type="text" name="phone" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>電子郵件:
-								<input type="text" name="email" class="form-control">
-							</td>
-							<td>通信地址:
-								<input type="text" name="address" class="form-control">
+							<td>聖愛德華大學(美國)</td>
+							<td>
+								<select name="orders[2]">
+									<option value="1">第一志願</option>
+									<option value="2">第二志願</option>
+									<option value="3">第三志願</option>
+								</select>
 							</td>
 						</tr>
 						<tr>
-							<td colspan="2">書審資料上傳:
-								<input type="file" name="introduct" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">中文歷年成績單證明:
-								<input type="file" name="transcript" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">語言檢定證明:
-								<input type="file" name="languageCertificate" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
+							<td colspan="4">
 								<button type="submit" class="btn btn-primary regButton">提交</button>
+								<button type="reset" class="btn btn-warning regButton">重置</button>
 							</td>
 						</tr>
 					</table>
-					<p class="text-danger text-left">*僅限於PDF檔才能上傳</p>
 				</form>
 			</div>
 		</div>

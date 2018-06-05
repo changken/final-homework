@@ -112,7 +112,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 wow fadeIn">
-						<i class="fa fa-camera"></i>
+						<i class="fa fa-pencil"></i>
 						<h1>申請交換學生</h1>
 						<p>這邊可以進行註冊~</p>
 					</div>
@@ -122,7 +122,7 @@
 
 		<div class="portfolio-container">
 			<div class="container">
-				<form action="" method="POST">
+				<form action="apply4.html" method="POST">
 					<table class="table table-striped regTable">
 						<tr>
 							<th colspan="4">3.選填學校(最多選擇5所)</th>
@@ -134,20 +134,34 @@
 							<td>選擇</td>
 						</tr>
 						<tr>
-							<td>匹茲堡州立大學(美國)</td>
+							<td>匹茲堡州立大學Pittsburg State University(美國)</td>
 							<td>4</td>
-							<td>暫無</td>
-							<td><input type="checkbox" name="schools[]"></td>
+							<td>
+								托福英檢(TOEFL):79(聽:15 說:15 讀:15 寫:15)
+								<br/> 或雅思英檢(IELTS):6.5(聽:5 說:5 讀:5 寫:5)<span class="text-danger">(資格不符)</span>
+								<br/> 限:學生班
+								<br/> 現在校平均分數高於:75
+							</td>
+							<td>
+								<input type="checkbox" name="schools[]">
+							</td>
 						</tr>
 						<tr>
-						<td>(自費)天普大學(美國)</td>
-						<td>10</td>
-						<td>暫無</td>
-						<td><input type="checkbox" name="schools[]" class="disable"></td>
+							<td>(自費)天普大學Temple University(美國)</td>
+							<td>10</td>
+							<td>
+								托福英檢(TOEFL):79(聽:0 說:0 讀:0 寫:0)
+								<br/> 或雅思英檢(IELTS):6.5(聽:0 說:0 讀:0 寫:0)<span class="text-danger">(資格不符)</span>
+								<br/> 限:學生班
+								<br/> 現在校平均分數高於:75
+							</td>
+							<td>
+								<input type="checkbox" name="schools[]" class="disabled" disabled>
+							</td>
 						</tr>
 						<tr>
 							<td colspan="4">
-								<button type="submit" class="btn btn-primary regButton">提交</button>
+								<button type="submit" class="btn btn-primary regButton">選擇</button>
 							</td>
 						</tr>
 					</table>
