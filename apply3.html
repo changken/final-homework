@@ -125,185 +125,28 @@
 				<form action="" method="POST">
 					<table class="table table-striped regTable">
 						<tr>
-							<th colspan="2">2.填寫校內成績</th>
+							<th colspan="4">3.選填學校(最多選擇5所)</th>
 						</tr>
 						<tr>
-							<td>系所:
-								<select name="department">
-									<option value="im">資訊管理學系</option>
-									<option value="mba">企業管理學系</option>
-									<option value="accounting">會計學系</option>
-								</select>
-							</td>
-							<td>學制:
-								<select name="schoolSystem">
-									<option value="bachelor">學士班</option>
-									<option value="master">碩士班</option>
-									<option value="docter">博士班</option>
-								</select>
-							</td>
+							<td>學校(國家)</td>
+							<td>名額</td>
+							<td>要求</td>
+							<td>選擇</td>
 						</tr>
 						<tr>
-							<td>年級:
-								<select name="grade">
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-								</select>
-							</td>
-							<td>雙主修:
-								<select name="doubleMajor">
-									<option value="none">None</option>
-									<option value="im">資訊管理學系</option>
-									<option value="mba">企業管理學系</option>
-									<option value="accounting">會計學系</option>
-								</select>
-							</td>
+							<td>匹茲堡州立大學(美國)</td>
+							<td>4</td>
+							<td>暫無</td>
+							<td><input type="checkbox" name="schools[]"></td>
 						</tr>
 						<tr>
-							<td>輔系:
-								<select name="supportMajor">
-									<option value="none">None</option>
-									<option value="im">資訊管理學系</option>
-									<option value="mba">企業管理學系</option>
-									<option value="accounting">會計學系</option>
-								</select>
-							</td>
-							<td>學程:
-								<select name="packageProcess">
-									<option value="none">None</option>
-									<option value="medicine">醫學工程學分學程</option>
-									<option value="E-commerce">電子商務學分學程</option>
-									<option value="globalManagement">國際企業管理學分學程</option>
-								</select>
-							</td>
+						<td>(自費)天普大學(美國)</td>
+						<td>10</td>
+						<td>暫無</td>
+						<td><input type="checkbox" name="schools[]" class="disable"></td>
 						</tr>
 						<tr>
-							<td colspan="2">是否同時申請其他交換學生計畫:
-								<select name="otherExchangePlan">
-									<option value="Yes">是</option>
-									<option value="No">否</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">是否同時申請研究所:
-								<select name="applyAtSameTime">
-									<option value="Yes">是</option>
-									<option value="No">否</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">歷年平均成績(四捨五入取至小數點第二位):
-								<input type="text" name="averageScore" class="form-control score" maxlength="5">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								托福總成績(TOEFLIBT):
-								<input type="text" name="toefl" class="form-control score">(79~120)
-							</td>
-							<td style="width:50%;">
-								聽:
-								<input type="text" name="toeflListen" class="form-control score" placeholder="(0~30)">
-								<br> 說:
-								<input type="text" name="toeflSpeaking" class="form-control score" placeholder="(0~30)">
-								<br> 讀:
-								<input type="text" name="toeflReading" class="form-control score" placeholder="(0~30)">
-								<br> 寫:
-								<input type="text" name="toeflWriting" class="form-control score" placeholder="(0~30)">
-								<br>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								雅思總成績(IETLS):
-								<input type="text" name="ietls" class="form-control score">
-							</td>
-							<td style="width:50%;">
-								聽:
-								<input type="text" name="ietlsListen" class="form-control score">
-								<br> 說:
-								<input type="text" name="ietlsSpeaking" class="form-control score">
-								<br> 讀:
-								<input type="text" name="ietlsReading" class="form-control score">
-								<br> 寫:
-								<input type="text" name="ietlsWriting" class="form-control score">
-								<br>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								多益美語(TOEIC):<input type="text" class="form-control score" name="toeic">
-							</td>
-							<td>
-								日語檢定(JLPT):
-								<select name="jlpt">
-									<option value="None">None</option>
-									<option value="N1">N1</option>
-									<option value="N2">N2</option>
-									<option value="N3">N3</option>
-									<option value="N4">N4</option>
-									<option value="N5">N5</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>
-							韓語檢定(TOPIK):
-							<select name="topik">
-							<option value="None">None</option>
-							<option value="1">1級</option>
-							<option value="2">2級</option>
-							<option value="3">3級</option>
-							<option value="4">4級</option>
-							<option value="5">5級</option>
-							<option value="6">6級</option>
-							</select>
-							</td>
-							<td>
-							法語檢定(DELF):
-							<select name="delf">
-							<option value="None">None</option>
-							<option value="delf a1">delf a1</option>
-							<option value="delf a2">delf a2</option>
-							<option value="delf b1">delf b1</option>
-							<option value="delf b2">delf b2</option>
-							<option value="dalf c1">dalf c1</option>
-							<option value="dalf c2">dalf c2</option>
-							</select>
-							</td>
-						</tr>
-						<tr>
-							<td>
-							西語檢定(DELE):
-							<select name="dele">
-							<option value="None">None</option>
-							<option value="A1">A1</option>
-							<option value="A2">A2</option>
-							<option value="B1">B1</option>
-							<option value="B2">B2</option>
-							<option value="C1">C1</option>
-							<option value="C2">C2</option>
-							</select>
-							</td>
-							<td>
-							德語檢定(Goethe & TDN):
-							<select name="Goethe">
-							<option value="None">None</option>
-							<option value="A1">A1</option>
-							<option value="A2">A2</option>
-							<option value="B1">B1</option>
-							<option value="B2">B2</option>
-							<option value="C1">C1</option>
-							<option value="C2">C2</option>
-							</select>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
+							<td colspan="4">
 								<button type="submit" class="btn btn-primary regButton">提交</button>
 							</td>
 						</tr>
