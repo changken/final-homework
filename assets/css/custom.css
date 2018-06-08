@@ -29,7 +29,21 @@ table.customTable input[type=text]{
     padding: 15px;
 }
 
-table.customTable input[type=text]:hover{
+table.customTable input[type=text]:focus{
+    width: 80%;
+    height: 80%;
+}
+
+/*password field*/
+table.customTable input.pw{
+    border-radius: 5px;
+    font-size: 21px;
+    width: 50%;
+    padding: 5px 0;
+}
+
+table.customTable input.pw:focus{
+    border: 1px solid gray;
     width: 80%;
     height: 80%;
 }
@@ -38,7 +52,7 @@ table.customTable input[class~=score]{
     width: 100px;
 }
 
-table.customTable input[class~=score]:hover{
+table.customTable input[class~=score]:focus{
     width: 200px;
 }
 
@@ -116,4 +130,13 @@ table.customTable.query tr:hover td{
 
 table.customTable.query tr td input[type=text]{
     background-color: #fffdfd;
+}
+
+/*reviewDoc*/
+table.customTable.reviewDoc{
+    margin: 0 auto 0;
+}
+
+table.customTable.reviewDoc tr td{
+    width:33%;
 }

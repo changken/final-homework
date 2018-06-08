@@ -125,26 +125,35 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 contact-form wow fadeInUp">
-						<form action="reviewDoc.html" method="post">
-							<table class="table customTable">
+						<form action="reviewDoc.html" method="GET">
+							<table class="table customTable reviewDoc" role="form">
 								<tr>
-									<th colspan="2">教師登入</th>
+									<th colspan="3">教師審查專區</th>
 								</tr>
 								<tr>
-									<td>帳號:
-										<input type="text" name="account">
+									<td>學生</td>
+									<td>書審資料</td>
+									<td>成績</td>
+								</tr>
+								<tr>
+									<td>
+										大哥大
 									</td>
-									<td>密碼:
-										<input type="password" name="password">
+									<td>
+										很好
+									</td>
+									<td>
+										<input type="text" name="score[0]" class="score">
 									</td>
 								</tr>
 								<tr>
-									<td colspan="2">
-										<button type="submit" class="btn btn-custom">登入</button>
+									<td colspan="3">
+										<button type="submit" class="btn btn-custom">儲存</button>
 									</td>
 								</tr>
 							</table>
 						</form>
+					</div>
 					<!--<div class="col-sm-7 contact-form wow fadeInLeft">
 	                    <p>
 	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
