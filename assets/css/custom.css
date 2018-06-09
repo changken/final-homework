@@ -37,13 +37,13 @@ table.customTable input[type=text]:focus{
 /*password field*/
 table.customTable input.pw{
     border-radius: 5px;
-    font-size: 21px;
-    width: 50%;
-    padding: 5px 0;
+    font-size: 22px;
+    width: 60%;
+    padding: 15px 0;
 }
 
 table.customTable input.pw:focus{
-    border: 1px solid gray;
+    border: 3px solid grey;
     width: 80%;
     height: 80%;
 }
@@ -134,9 +134,34 @@ table.customTable.query tr td input[type=text]{
 
 /*reviewDoc*/
 table.customTable.reviewDoc{
+    background-color:white;
     margin: 0 auto 0;
+    font-family: 'Microsoft JhengHei';
+}
+
+table.customTable.reviewDoc tr th{
+    color: white;
+    background-color: midnightblue;
+    padding: 20px 0;
+    border-radius: 10px;
 }
 
 table.customTable.reviewDoc tr td{
-    width:33%;
+    font-size: 25px;
+    border-bottom: 1px solid midnightblue;
+}
+
+table.customTable.reviewDoc tr:hover td{
+    background-color: ghostwhite;
+    border-bottom: 3px solid midnightblue;
+}
+
+table.customTable.reviewDoc tr.reviewRow td{
+    width:34%;
+}
+
+/*adminlogin*/
+div.modal{
+    color: black;
+    font-family: 'Microsoft JhengHei';
 }
