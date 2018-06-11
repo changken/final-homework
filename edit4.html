@@ -112,9 +112,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 wow fadeIn">
-						<i class="fa fa-pencil"></i>
-						<h1>申請交換學生</h1>
-						<p>這邊可以進行註冊~</p>
+						<i class="fa fa-edit"></i>
+						<h1>修改申請資料</h1>
+						<p>如果資料有誤，請盡速聯繫本組</p>
 					</div>
 				</div>
 			</div>
@@ -128,11 +128,11 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 class="modal-title" id="saveMessageTitle">提交成功！</h4>
+						<h4 class="modal-title" id="saveMessageTitle">修改成功！</h4>
 					</div>
 					<div class="modal-body">
 						<div class="alert alert-success" role="alert">
-							<p>申請資料已成功提交！</p>
+							<p>申請資料已成功修改！</p>
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -144,55 +144,59 @@
 			</div>
 		</div>
 
-		<div class="portfolio-container">
+		<div class="services-full-width-container">
 			<div class="container">
-				<form action="" method="GET">
-					<table class="table customTable regTable">
-						<tr>
-							<th colspan="4">4.選填志願序</th>
-						</tr>
-						<tr>
-							<td>學校(國家)</td>
-							<td>志願序</td>
-						</tr>
-						<tr>
-							<td>匹茲堡州立大學Pittsburg State University(美國)</td>
-							<td>
-								<select name="orders[0]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>(自費)天普大學Temple University(美國)</td>
-							<td>
-								<select name="orders[1]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>聖愛德華大學(美國)</td>
-							<td>
-								<select name="orders[2]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#saveMessage">提交</button>
-								<button type="reset" class="btn btn-custom">重置</button>
-							</td>
-						</tr>
-					</table>
-				</form>
+				<div class="row">
+					<div class="col-sm-12 services-full-width-text wow fadeInLeft">
+						<form action="" method="GET">
+							<table class="table customTable regTable">
+								<tr>
+									<th colspan="4">4.選填志願序</th>
+								</tr>
+								<tr>
+									<td>學校(國家)</td>
+									<td>志願序</td>
+								</tr>
+								<tr>
+									<td>匹茲堡州立大學Pittsburg State University(美國)</td>
+									<td>
+										<select name="orders[0]">
+											<option value="1" selected>第一志願</option>
+											<option value="2">第二志願</option>
+											<option value="3">第三志願</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>(自費)天普大學Temple University(美國)</td>
+									<td>
+										<select name="orders[1]">
+											<option value="1">第一志願</option>
+											<option value="2" selected>第二志願</option>
+											<option value="3">第三志願</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>聖愛德華大學(美國)</td>
+									<td>
+										<select name="orders[2]">
+											<option value="1">第一志願</option>
+											<option value="2">第二志願</option>
+											<option value="3" selected>第三志願</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#saveMessage">提交</button>
+										<button type="reset" class="btn btn-custom">重置</button>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Portfolio -->

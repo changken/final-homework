@@ -112,87 +112,100 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 wow fadeIn">
-						<i class="fa fa-pencil"></i>
-						<h1>申請交換學生</h1>
-						<p>這邊可以進行註冊~</p>
+						<i class="fa fa-edit"></i>
+						<h1>修改申請資料</h1>
+						<p>如果資料有誤，請盡速聯繫本組</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!--modal-->
-		<div class="modal fade" id="saveMessage" tabindex="-1" role="dialog" aria-labelledby="saveMessageTitle">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<h4 class="modal-title" id="saveMessageTitle">提交成功！</h4>
-					</div>
-					<div class="modal-body">
-						<div class="alert alert-success" role="alert">
-							<p>申請資料已成功提交！</p>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<form action="query.html" method="POST">
-							<button type="submit" class="btn btn-primary">確定</button>
+		<div class="services-full-width-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 services-full-width-text wow fadeInLeft">
+						<form action="edit2.html" method="POST" enctype="multipart/form-data">
+							<table class="table customTable regTable">
+								<tr>
+									<th colspan="2">1.您的基本資料</th>
+								</tr>
+								<tr>
+									<td>學號:
+										<input type="text" name="sid" class="form-control" value="406401999" readonly>
+									</td>
+									<td>姓名:
+										<input type="text" name="name" class="form-control" value="彭家豪" readonly>
+									</td>
+								</tr>
+								<tr>
+									<td>身份證字號/居留證號:
+										<input type="text" name="uid" class="form-control" value="F123456789" readonly>
+									</td>
+									<td>英文姓名:
+										<input type="text" name="englishName" class="form-control" placeholder="First name, Last name" value="Peng">
+									</td>
+								</tr>
+								<tr>
+									<td>國籍:
+										<select name="country">
+											<option value="tw" selected>台灣</option>
+											<option value="cn">中國</option>
+											<option value="hk">香港特別行政區</option>
+											<option value="mo">澳門特別行政區</option>
+											<option value="mo">聖多美普林西比</option>
+										</select>
+									</td>
+									<td>性別:
+										<br>
+										<div class="radio">
+											<input type="radio" name="gender" value="male" checked>男
+										</div>
+										<div class="radio">
+											<input type="radio" name="gender" value="female">女
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>生日:
+										<input type="text" name="birthbay" class="form-control" value="2018-12-31" readonly>
+									</td>
+									<td>手機電話:
+										<input type="text" name="phone" class="form-control" value="09123456789">
+									</td>
+								</tr>
+								<tr>
+									<td>電子郵件:
+										<input type="text" name="email" class="form-control" value="406401999@mail.fju.edu.tw">
+									</td>
+									<td>通信地址:
+										<input type="text" name="address" class="form-control" value="242新北市新莊區中正路510號">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">書審資料上傳:
+										<input type="file" name="introduct" class="form-control">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">中文歷年成績單證明:
+										<input type="file" name="transcript" class="form-control">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">語言檢定證明:
+										<input type="file" name="languageCertificate" class="form-control">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<button type="submit" class="btn btn-custom">提交</button>
+									</td>
+								</tr>
+							</table>
+							<p class="text-danger text-left">*僅限於PDF檔才能上傳</p>
 						</form>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<div class="portfolio-container">
-			<div class="container">
-				<form action="" method="GET">
-					<table class="table customTable regTable">
-						<tr>
-							<th colspan="4">4.選填志願序</th>
-						</tr>
-						<tr>
-							<td>學校(國家)</td>
-							<td>志願序</td>
-						</tr>
-						<tr>
-							<td>匹茲堡州立大學Pittsburg State University(美國)</td>
-							<td>
-								<select name="orders[0]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>(自費)天普大學Temple University(美國)</td>
-							<td>
-								<select name="orders[1]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>聖愛德華大學(美國)</td>
-							<td>
-								<select name="orders[2]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#saveMessage">提交</button>
-								<button type="reset" class="btn btn-custom">重置</button>
-							</td>
-						</tr>
-					</table>
-				</form>
 			</div>
 		</div>
 		<!-- Portfolio -->

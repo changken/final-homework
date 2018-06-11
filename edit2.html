@@ -112,87 +112,208 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 wow fadeIn">
-						<i class="fa fa-pencil"></i>
-						<h1>申請交換學生</h1>
-						<p>這邊可以進行註冊~</p>
+						<i class="fa fa-edit"></i>
+						<h1>修改申請資料</h1>
+						<p>如果資料有誤，請盡速聯繫本組</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!--modal-->
-		<div class="modal fade" id="saveMessage" tabindex="-1" role="dialog" aria-labelledby="saveMessageTitle">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<h4 class="modal-title" id="saveMessageTitle">提交成功！</h4>
-					</div>
-					<div class="modal-body">
-						<div class="alert alert-success" role="alert">
-							<p>申請資料已成功提交！</p>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<form action="query.html" method="POST">
-							<button type="submit" class="btn btn-primary">確定</button>
+		<div class="services-full-width-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 services-full-width-text wow fadeInLeft">
+						<form action="edit3.html" method="POST">
+							<table class="table customTable regTable">
+								<tr>
+									<th colspan="2">2.您的校內成績</th>
+								</tr>
+								<tr>
+									<td>系所:
+										<select name="department">
+											<option value="im" selected>資訊管理學系</option>
+											<option value="mba">企業管理學系</option>
+											<option value="accounting">會計學系</option>
+										</select>
+									</td>
+									<td>學制:
+										<select name="schoolSystem">
+											<option value="bachelor" selected>學士班</option>
+											<option value="master">碩士班</option>
+											<option value="docter">博士班</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>年級:
+										<select name="grade">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</td>
+									<td>雙主修:
+										<select name="doubleMajor">
+											<option value="none">None</option>
+											<option value="im">資訊管理學系</option>
+											<option value="mba" selected>企業管理學系</option>
+											<option value="accounting">會計學系</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>輔系:
+										<select name="supportMajor">
+											<option value="none">None</option>
+											<option value="im">資訊管理學系</option>
+											<option value="mba">企業管理學系</option>
+											<option value="accounting" selected>會計學系</option>
+										</select>
+									</td>
+									<td>學程:
+										<select name="packageProcess">
+											<option value="none" selected>None</option>
+											<option value="medicine">醫學工程學分學程</option>
+											<option value="E-commerce">電子商務學分學程</option>
+											<option value="globalManagement">國際企業管理學分學程</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">是否同時申請其他交換學生計畫:
+										<select name="otherExchangePlan">
+											<option value="Yes">是</option>
+											<option value="No" selected>否</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">是否同時申請研究所:
+										<select name="applyAtSameTime">
+											<option value="Yes">是</option>
+											<option value="No" selected>否</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">歷年平均成績(四捨五入取至小數點第二位):
+										<input type="text" name="averageScore" class="form-control score" maxlength="5" value="94.55" readonly>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										托福總成績(TOEFLIBT):
+										<input type="text" name="toefl" class="form-control score" value="110">(79~120)
+									</td>
+									<td style="width:50%;">
+										聽:
+										<input type="text" name="toeflListen" class="form-control score" placeholder="(0~30)" value="30">
+										<br> 說:
+										<input type="text" name="toeflSpeaking" class="form-control score" placeholder="(0~30)" value="30">
+										<br> 讀:
+										<input type="text" name="toeflReading" class="form-control score" placeholder="(0~30)" value="30">
+										<br> 寫:
+										<input type="text" name="toeflWriting" class="form-control score" placeholder="(0~30)" value="30">
+										<br>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										雅思總成績(IETLS):
+										<input type="text" name="ietls" class="form-control score" value="None">
+									</td>
+									<td style="width:50%;">
+										聽:
+										<input type="text" name="ietlsListen" class="form-control score" value="None">
+										<br> 說:
+										<input type="text" name="ietlsSpeaking" class="form-control score" value="None">
+										<br> 讀:
+										<input type="text" name="ietlsReading" class="form-control score" value="None">
+										<br> 寫:
+										<input type="text" name="ietlsWriting" class="form-control score" value="None">
+										<br>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										多益美語(TOEIC):
+										<input type="text" class="form-control score" name="toeic" value="830">
+									</td>
+									<td>
+										日語檢定(JLPT):
+										<select name="jlpt">
+											<option value="None">None</option>
+											<option value="N1" selected>N1</option>
+											<option value="N2">N2</option>
+											<option value="N3">N3</option>
+											<option value="N4">N4</option>
+											<option value="N5">N5</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										韓語檢定(TOPIK):
+										<select name="topik">
+											<option value="None">None</option>
+											<option value="1" selected>1級</option>
+											<option value="2">2級</option>
+											<option value="3">3級</option>
+											<option value="4">4級</option>
+											<option value="5">5級</option>
+											<option value="6">6級</option>
+										</select>
+									</td>
+									<td>
+										法語檢定(DELF):
+										<select name="delf">
+											<option value="None" selected>None</option>
+											<option value="delf a1">delf a1</option>
+											<option value="delf a2">delf a2</option>
+											<option value="delf b1">delf b1</option>
+											<option value="delf b2">delf b2</option>
+											<option value="dalf c1">dalf c1</option>
+											<option value="dalf c2">dalf c2</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										西語檢定(DELE):
+										<select name="dele">
+											<option value="None">None</option>
+											<option value="A1">A1</option>
+											<option value="A2">A2</option>
+											<option value="B1">B1</option>
+											<option value="B2">B2</option>
+											<option value="C1" selected>C1</option>
+											<option value="C2">C2</option>
+										</select>
+									</td>
+									<td>
+										德語檢定(Goethe & TDN):
+										<select name="Goethe">
+											<option value="None" selected>None</option>
+											<option value="A1">A1</option>
+											<option value="A2">A2</option>
+											<option value="B1">B1</option>
+											<option value="B2">B2</option>
+											<option value="C1">C1</option>
+											<option value="C2">C2</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<button type="submit" class="btn btn-custom">提交</button>
+									</td>
+								</tr>
+							</table>
 						</form>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<div class="portfolio-container">
-			<div class="container">
-				<form action="" method="GET">
-					<table class="table customTable regTable">
-						<tr>
-							<th colspan="4">4.選填志願序</th>
-						</tr>
-						<tr>
-							<td>學校(國家)</td>
-							<td>志願序</td>
-						</tr>
-						<tr>
-							<td>匹茲堡州立大學Pittsburg State University(美國)</td>
-							<td>
-								<select name="orders[0]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>(自費)天普大學Temple University(美國)</td>
-							<td>
-								<select name="orders[1]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>聖愛德華大學(美國)</td>
-							<td>
-								<select name="orders[2]">
-									<option value="1">第一志願</option>
-									<option value="2">第二志願</option>
-									<option value="3">第三志願</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#saveMessage">提交</button>
-								<button type="reset" class="btn btn-custom">重置</button>
-							</td>
-						</tr>
-					</table>
-				</form>
 			</div>
 		</div>
 		<!-- Portfolio -->
