@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>customTable</title>
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap-theme.min.css">
+        <script src="../assets/js/jquery-1.11.1.min.js"></script>
+        <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../assets/css/custom.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-sm-12">
+                    <h1 class="text-center" style="margin-bottom: 20px;">原則上範例程式如下:</h1>
+                    <div class="alert alert-warning" role="alert" style="font-size: 20px;">
+                        原則上！以.customTable為父類別，下面就有三個繼承父類別的子類，分別為regTable、query、reviewDoc等不同色系的類別！<br/>
+                        原則上&lt;input type="text"&gt;、&lt;select&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;在.customTable下方的，都會<font size="7">全部套用</font><br/>
+                        只有&lt;input type="password" class="pw"&gt;和&lt;input type="text" class="score"&gt;要自己套用class<br/>
+                        至於&lt;button class="btn"&gt;.btn&lt;/button&gt;和&lt;button class="btn btn-custom"&gt;.btn.btn-custom&lt;/button&gt;只是按鈕大小的問題罷了<br/>
+                        請記得不忘在所有表格class的前方加上table類別
+                    </div>
+                    <form action="" method="POST">
+                        <table class="table customTable" style="margin-bottom: 20px;">
+                            <tr>
+                                <th colspan="2">.table.customTable</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="school">
+                                        <option value="ntu">台灣大學</option>
+                                        <option value="ntu">輔仁大學</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="sex">
+                                        <option value="male">男</option>
+                                        <option value="female">女森</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="test1">
+                                </td>
+                                <td>
+                                    <input type="text" name="score" class="score" placeholder=".score">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="password" name="password" class="pw" placeholder=".pw">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn btn-custom">.btn.btn-custom</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn">.btn</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <form action="" method="POST">
+                        <table class="table customTable regTable" style="margin-bottom: 20px;">
+                            <tr>
+                                <th colspan="2">.table.customTable.regTable</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="school">
+                                        <option value="ntu">台灣大學</option>
+                                        <option value="ntu">輔仁大學</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="sex">
+                                        <option value="male">男</option>
+                                        <option value="female">女森</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="test1">
+                                </td>
+                                <td>
+                                    <input type="text" name="score" class="score" placeholder=".score">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="test2">
+                                </td>
+                                <td>
+                                    <input type="text" name="score2" class="score" placeholder=".score">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="password" name="password" class="pw" placeholder=".pw">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn btn-custom">.btn.btn-custom</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <form action="" method="POST">
+                        <table class="table customTable query" style="margin-bottom: 20px;">
+                            <tr>
+                                <th colspan="2">.table.customTable.query</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="school">
+                                        <option value="ntu">台灣大學</option>
+                                        <option value="ntu">輔仁大學</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="sex">
+                                        <option value="male">男</option>
+                                        <option value="female">女森</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="test1">
+                                </td>
+                                <td>
+                                    <input type="text" name="score" class="score" placeholder=".score">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="test2">
+                                </td>
+                                <td>
+                                    <input type="text" name="score2" class="score" placeholder=".score">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="password" name="password" class="pw" placeholder=".pw">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn btn-custom">.btn.btn-custom</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div class="alert alert-info" role="alert" style="font-size: 20px;">
+                            &lt;tr class="reviewRow"&gt;&lt;td&gt;.....&lt;/td&gt;&lt;/tr&gt;只是用來固定每個td的寬度為34%
+                    </div>
+                    <form action="" method="POST">
+                        <table class="table customTable reviewDoc" style="margin-bottom: 20px;">
+                            <tr>
+                                <th colspan="2">.table.customTable.reviewDoc</th>
+                            </tr>
+                            <tr class="reviewRow">
+                                <td>
+                                    <select name="school">
+                                        <option value="ntu">台灣大學</option>
+                                        <option value="ntu">輔仁大學</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="sex">
+                                        <option value="male">be a man</option>
+                                        <option value="female">人家是女森耶</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="reviewRow">
+                                <td>
+                                    <input type="text" name="test1">
+                                </td>
+                                <td>
+                                    <input type="text" name="score" class="score" placeholder=".score">
+                                </td>
+                            </tr>
+                            <tr class="reviewRow">
+                                <td>
+                                    <input type="text" name="test2">
+                                </td>
+                                <td>
+                                    <input type="text" name="score2" class="score" placeholder=".score">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="password" name="password" class="pw" placeholder=".pw">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn btn-custom">.btn.btn-custom</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
