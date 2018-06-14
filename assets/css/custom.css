@@ -1,9 +1,19 @@
-/*all*/
+/*global style*/
 p{
     font-size: 16px;
 }
 
-/*customTable style*/
+/*adminlogin*/
+div.modal{
+    color: black;
+    font-family: 'Microsoft JhengHei';
+}
+
+/**
+ *CustomTable
+ *the main style for a series.
+ * 一般來說，你可以用滑鼠移過去來查看css樣式，它們會被套用在哪個情況底下。
+ */
 table.customTable{
     font-family: "微軟正黑體";
     width: 100%;
@@ -72,7 +82,7 @@ button.btn.btn-custom{
     border-radius: 2px;
 }
 
-/*reg table*/
+/*Reg Table*/
 table.customTable.regTable{
     border: none;
     margin: 0 auto 0;
@@ -85,6 +95,7 @@ table.customTable.regTable tr th{
     padding: 40px 0;
 }
 
+/*做出來會類似"斑馬紋"的效果*/
 table.customTable.regTable tr:nth-child(even) td input[type=text]:hover{
     background-color: #F5F5F5;
     border: 2px solid #E8E8E8;
@@ -103,7 +114,7 @@ table.customTable.regTable tr:nth-child(odd) td input[type=text]:hover{
     border: 2px solid #EDD4FF;
 }
 
-/*query table*/
+/*Query Table*/
 table.customTable.query{
     background-color: #f8f8f8;
     width: 75%;
@@ -132,7 +143,7 @@ table.customTable.query tr td input[type=text]{
     background-color: #fffdfd;
 }
 
-/*reviewDoc*/
+/*reviewDoc Table*/
 table.customTable.reviewDoc{
     background-color:white;
     margin: 0 auto 0;
@@ -156,12 +167,48 @@ table.customTable.reviewDoc tr:hover td{
     border-bottom: 3px solid midnightblue;
 }
 
+/*固定每一個td的寬度為34%*/
 table.customTable.reviewDoc tr.reviewRow td{
     width:34%;
 }
 
-/*adminlogin*/
-div.modal{
-    color: black;
-    font-family: 'Microsoft JhengHei';
+/*adminTable*/
+table.customTable.adminTable{
+    border-radius: 9px;
+}
+
+table.customTable.adminTable tr th{
+    background-color: #7b7b7b;
+    color: white;
+    border-radius: 8px;
+}
+
+table.customTable.adminTable tr td{
+    font-size: 24px;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 20px 10px;
+}
+
+table.customTable.adminTable tr td:hover{
+    background-color: #f0f0f0;
+    border-bottom: 3px solid #d0d0d0;
+    border-radius: 9px;
+}
+
+/*For adminCenter only, which inherited from adminCenter*/
+table.customTable.adminTable.adminCenter{
+    margin: 30px 0;
+}
+
+table.customTable.adminTable.adminCenter tr th{
+    padding: 30px 5px;
+    font-size: 34px;
+}
+
+table.customTable.adminTable.adminCenter tr td{
+    padding: 50px 5px;
+    font-size: 30px;
+    width: 34%;
+    text-align: center;
+    vertical-align: middle;
 }
