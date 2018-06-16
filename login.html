@@ -51,7 +51,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index-2.html">Andia - a super cool design agency...</a>
+					<a class="navbar-brand" href="index.html">Andia - a super cool design agency...</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -62,11 +62,11 @@
 							</a>
 							<ul class="dropdown-menu dropdown-menu-left" role="menu">
 								<li><a href="index.html">Home</a></li>
-								<li class="active"><a href="index-2.html">Home 2</a></li>
+								<li class="active"><a href="index.html">Home 2</a></li>
 							</ul>
 						</li>-->
 						<li>
-							<a href="index-2.html">
+							<a href="index.html">
 								<i class="fa fa-home"></i>
 								<br>首頁</a>
 						</li>
@@ -76,7 +76,7 @@
 								<br>申請交換學生</a>
 						</li>
 						<li>
-							<a href="services.html">
+							<a href="edits.html">
 								<i class="fa fa-edit"></i>
 								<br>修改申請資料</a>
 						</li>
@@ -86,7 +86,7 @@
 								<br>查詢申請狀況</a>
 						</li>
 						<li>
-							<a href="contact.html">
+							<a href="teacherLogin.html">
 								<i class="fa fa-user"></i>
 								<br>教師審查與評分</a>
 						</li>
@@ -159,7 +159,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7 about-us-text wow fadeInLeft">
-						<form action="login2.html" method="POST">
+						<form action="" method="POST" id="loginForm">
 							<!-- Press enter to this site -->
 							<table class="table customTable query">
 								<tr>
@@ -197,7 +197,7 @@
 						審查設定/
 						修改記錄/
 						開放時間</p>
-						<form action="index-2.html" method="POST">
+						<form action="index.html" method="POST">
 							<div >
 								<label for="account">帳號</label>
 								<input type="text" name="name" placeholder="輸入LDAP帳號...">
@@ -213,14 +213,14 @@
 
 					<div class="col-sm-5 contact-address wow fadeInUp">
 						<h3> 天主教輔仁大學 </h3>
-
+						<h3>24205 新北市新莊區中正路510號</h3>
 						<div class="map"></div>
 
-						<h3>系統維護單位</h3>
+						<!--<h3>系統維護單位</h3>
 						<p>國教處國際學生中心
 							<br> 業務承辦人：林姿儀
 						</p>
-						<p>輔仁大學連絡分機：2386</p>
+						<p>輔仁大學連絡分機：2386</p>-->
 					</div>
 				</div>
 			</div>
@@ -231,37 +231,29 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 pricing-1-title wow fadeIn">
-						<h2>暫時頁面</h2>
+						<h2>權限比較</h2>
 					</div>
 				</div>
 				<div class="row">
-					<!--第一個
+					<!--第一個-->
 					<div class="col-sm-6 pricing-1-box wow fadeInUp">
-						
 						<div class="pricing-1-box-inner">
 							<div class="pricing-1-box-price">
-								<span>$ </span>
-								<strong>12</strong>
-								<span> / month</span>
+								<strong>教師登入</strong>
 							</div>
-							<h3>Basic</h3>
-							<h4>Freelancer</h4>
+							<h3>請使用系統所提供的帳密</h3>
+							<h4>您可進行以下操作</h4>
 							<div class="pricing-1-box-features">
 								<ul>
-									<li>1000 lorem ipsum</li>
-									<li>Normal speed</li>
-									<li>500 dolor sit amet</li>
-									<li>300MB to save projects</li>
-									<li>750 hours of support</li>
+									<li>審查同學的書審資料</li>
 								</ul>
 							</div>
 							<div class="pricing-1-box-sign-up">
-								<a class="big-link-3" href="#">Buy now</a>
+								<a class="big-link-3" href="teacherLogin.html#teacherLogin">登入後審查!</a>
 							</div>
 						</div>
 					</div>
-					-->
-					<div class="col-sm-12 pricing-1-box pricing-1-box-best wow fadeInDown">
+					<div class="col-sm-6 pricing-1-box pricing-1-box-best wow fadeInDown">
 						<!--第二個-->
 						<div class="pricing-1-box-inner">
 							<div class="pricing-1-box-price">
@@ -277,17 +269,16 @@
 								</ul>
 							</div>
 							<div class="pricing-1-box-sign-up">
-								<a class="big-link-3" href="#">Buy now</a>
+								<a class="big-link-3" href="#loginForm">現在就登入!</a>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 
 		<!-- Pricing 2 -->
-		<div class="pricing-2-container">
+		<!--<div class="pricing-2-container">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 pricing-1-title wow fadeIn">
@@ -391,56 +382,33 @@
 
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<!-- Footer -->
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-3 footer-box wow fadeInUp">
-						<h4>About Us</h4>
+					<div class="col-sm-4 footer-box wow fadeInUp">
+						<div class="footer-box-text" style="margin-top: 20px;">
+							<img src="assets/img/school/school1.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-4 footer-box wow fadeInDown">
+						<h4>系統維護單位</h4>
 						<div class="footer-box-text">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor
-								sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-							</p>
-							<p>
-								<a href="about.html">Read more...</a>
-							</p>
+							<p>國教處國際學生中心</p>
+							<p>業務承辦人：林姿儀</p>
+							<p>輔仁大學連絡分機：2386</p>
+							<p><a href="http://isc.oie.fju.edu.tw/">更多資訊...</a></p>
 						</div>
 					</div>
-					<div class="col-sm-3 footer-box wow fadeInDown">
-						<h4>Email Updates</h4>
-						<div class="footer-box-text footer-box-text-subscribe">
-							<p>Enter your email and you'll be one of the first to get new updates:</p>
-							<form role="form" action="assets/subscribe.php" method="post">
-								<div class="form-group">
-									<label class="sr-only" for="subscribe-email">Email address</label>
-									<input type="text" name="email" placeholder="Email..." class="subscribe-email" id="subscribe-email">
-								</div>
-								<button type="submit" class="btn">Subscribe</button>
-							</form>
-							<p class="success-message"></p>
-							<p class="error-message"></p>
-						</div>
-					</div>
-					<div class="col-sm-3 footer-box wow fadeInUp">
-						<h4>Flickr Photos</h4>
-						<div class="footer-box-text flickr-feed"></div>
-					</div>
-					<div class="col-sm-3 footer-box wow fadeInDown">
-						<h4>Contact Us</h4>
+					<div class="col-sm-4 footer-box wow fadeInUp">
+						<h4>聯絡我們</h4>
 						<div class="footer-box-text footer-box-text-contact">
-							<p>
-								<i class="fa fa-map-marker"></i> Address: Via Principe Amedeo 9, 10100, Torino, TO, Italy</p>
-							<p>
-								<i class="fa fa-phone"></i> Phone: 0039 333 12 68 347</p>
-							<p>
-								<i class="fa fa-user"></i> Skype: Andia_Agency</p>
-							<p>
-								<i class="fa fa-envelope"></i> Email:
-								<a href="">contact@andia.co.uk</a>
-							</p>
+							<p>國際學生中心</p>
+							<p><i class="fa fa-map-marker"></i> 地址: 24205 新北市新莊區中正路510號 耕莘樓A113/A111室</p>
+							<p><i class="fa fa-phone"></i> 電話: +886 2 2905 2944</p>
+							<p><i class="fa fa-envelope"></i> Email: <a href="mailto:isc@mail.fju.edu.tw">isc@mail.fju.edu.tw</a></p>
 						</div>
 					</div>
 				</div>
@@ -450,24 +418,15 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-7 footer-copyright wow fadeIn">
-						<p>Copyright 2012 Andia - All rights reserved. Template by
-							<a href="http://azmind.com/free-bootstrap-themes-templates/">Azmind</a>.</p>
+					<div class="col-sm-12 footer-copyright wow fadeIn">
+						<p> Copyright 1982-2018 天主教輔仁大學 / 國際及兩岸教育處 - All rights reserved. Template by <a href="http://azmind.com/free-bootstrap-themes-templates/">Azmind</a>.</p>
 					</div>
-					<div class="col-sm-5 footer-social wow fadeIn">
-						<a href="#">
-							<i class="fa fa-facebook"></i>
-						</a>
-						<a href="#">
-							<i class="fa fa-dribbble"></i>
-						</a>
-						<a href="#">
-							<i class="fa fa-twitter"></i>
-						</a>
-						<a href="#">
-							<i class="fa fa-pinterest"></i>
-						</a>
-					</div>
+					<!--<div class="col-sm-5 footer-social wow fadeIn">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>-->
 				</div>
 			</div>
 		</footer>
