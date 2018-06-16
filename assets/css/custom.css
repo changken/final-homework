@@ -17,7 +17,7 @@ div.hint{
     padding: 10px 30px;
     width: 75%;
 }
-
+/*when hovor on the this textArea*/
 div.hint:hover{
     border: 5px solid gray;
 }
@@ -56,7 +56,7 @@ table.customTable input[type=text]{
     width: 50%;
     padding: 15px;
 }
-
+/*focus:display another color when click here*/
 table.customTable input[type=text]:focus{
     width: 80%;
     height: 80%;
@@ -185,7 +185,7 @@ table.customTable.reviewDoc tr:hover td{
     border-bottom: 3px solid midnightblue;
 }
 
-/*固定每一個td的寬度為34%*/
+/*固定reviewDoc內每一個td的寬度為34%*/
 table.customTable.reviewDoc tr.reviewRow td{
     width:34%;
 }
@@ -229,4 +229,34 @@ table.customTable.adminTable.adminCenter tr td{
     width: 34%;
     text-align: center;
     vertical-align: middle;
+}
+
+/*adminApply Table*/
+table.customTable.adminApply{
+    background-color:white;
+    margin: 0 auto 0;
+    font-family: 'Microsoft JhengHei';
+}
+
+table.customTable.adminApply tr th{
+    color: white;
+    background-color: #9d426b;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+table.customTable.adminApply tr td{
+    font-size: 25px;
+    border-bottom: 1px solid #9d426b;
+}
+
+table.customTable.adminApply tr:hover td{
+    background-color: ghostwhite;
+    border-bottom: 3px solid #9d426b;
+}
+
+
+/*固定adminApply內每一個td的寬度*/
+table.customTable.adminApply tr.adminApplyRow td{
+    width:17%;
 }
