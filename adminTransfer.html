@@ -1,394 +1,1416 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<!--管理者頁面-->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>輔仁大學交換生系統</title>
+<head>
+    <!--管理者頁面-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>輔仁大學交換生系統</title>
 
-		<!-- CSS -->
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
-		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/animate.css">
-		<link rel="stylesheet" href="assets/css/magnific-popup.css">
-		<link rel="stylesheet" href="assets/flexslider/flexslider.css">
-		<link rel="stylesheet" href="assets/css/form-elements.css">
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/media-queries.css">
-		<!--custom-->
-		<link rel="stylesheet" href="assets/css/custom.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/flexslider/flexslider.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <!--custom-->
+    <link rel="stylesheet" href="assets/css/custom.css">
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-		<!-- Favicon and touch icons -->
-		<link rel="shortcut icon" href="assets/ico/favicon.ico">
-		<!-- 建議更換輔大icon -->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <!-- 建議更換輔大icon -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<!-- Top menu -->
-		<nav class="navbar" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Andia - a super cool design agency...</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="top-navbar-1">
-					<ul class="nav navbar-nav navbar-right">
-						<!--<li class="dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-								<i class="fa fa-home"></i><br>Home <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu dropdown-menu-left" role="menu">
-								<li><a href="index.html">Home</a></li>
-								<li class="active"><a href="index.html">Home 2</a></li>
-							</ul>
-						</li>-->
-						<li>
-							<a href="index.html">
-								<i class="fa fa-home"></i>
-								<br>首頁</a>
-						</li>
-						<li>
-							<a href="apply.html">
-								<i class="fa fa-pencil"></i>
-								<br>申請交換學生</a>
-						</li>
-						<li>
-							<a href="edits.html">
-								<i class="fa fa-edit"></i>
-								<br>修改申請資料</a>
-						</li>
-						<li>
-							<a href="query.html">
-								<i class="fa fa-search"></i>
-								<br>查詢申請狀況</a>
-						</li>
-						<li>
-							<a href="teacherLogin.html">
-								<i class="fa fa-user"></i>
-								<br>教師審查與評分</a>
-						</li>
-						<li class="dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-								<i class="fa fa-dashboard"></i>
-								<br>管理者專區
-								<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu" role="menu">
-								<li>
-									<a href="login.html">登入</a>
-								</li>
-								<!--連結到登入頁面-->
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+<!-- Top menu -->
+<nav class="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Andia - a super cool design agency...</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+                        <i class="fa fa-home"></i><br>Home <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.html">Home 2</a></li>
+                    </ul>
+                </li>-->
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home"></i>
+                        <br>首頁</a>
+                </li>
+                <li>
+                    <a href="apply.html">
+                        <i class="fa fa-pencil"></i>
+                        <br>申請交換學生</a>
+                </li>
+                <li>
+                    <a href="edits.html">
+                        <i class="fa fa-edit"></i>
+                        <br>修改申請資料</a>
+                </li>
+                <li>
+                    <a href="query.html">
+                        <i class="fa fa-search"></i>
+                        <br>查詢申請狀況</a>
+                </li>
+                <li>
+                    <a href="teacherLogin.html">
+                        <i class="fa fa-user"></i>
+                        <br>教師審查與評分</a>
+                </li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+                        <i class="fa fa-dashboard"></i>
+                        <br>管理者專區
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="login.html">登入</a>
+                        </li>
+                        <!--連結到登入頁面-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-		<!-- Page Title -->
-		<div class="page-title-container">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 wow fadeIn">
-						<i class="fa fa-dashboard"></i>
-						<h1>管理者頁面</h1>
-						<p>Administrator Bashboard</p>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- Page Title -->
+<div class="page-title-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 wow fadeIn">
+                <i class="fa fa-dashboard"></i>
+                <h1>管理者頁面</h1>
+                <p>Administrator Bashboard</p>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!--delete-->
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="deleteTitle">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="deleteTitle">刪除成功！</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success" role="alert">
+                    <p>該交換學校已成功刪除！</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <form action="adminTransfer.html" method="POST">
+                    <button type="submit" class="btn btn-primary">確定</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<!-- Pricing 1 -->
-		<div class="pricing-1-container">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 pricing-1-title wow fadeIn">
-						<h2>管理者面板</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 wow fadeInDown">
-						<table class="table customTable adminTable adminCenter">
-							<tr>
-								<th colspan="3">申請資料</th>
-							</tr>
-							<tr>
-								<td>
-									<a href="#">aaaa
-										<br>
-										<i class="fa fa-file-text fa-3x"></i>
-									</a>
-								</td>
-								<td>
-									<a href="#">bbbb
-										<br>
-										<i class="fa fa-key fa-3x"></i>
-									</a>
-								</td>
-								<td>
-									<a href="#">cccc
-										<br>
-										<i class="fa fa-globe fa-3x"></i>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<!--我想改成apple setting icon
-								old driver!-->
-									<a href="#">dddd
-										<br>
-										<i class="fa fa-cog fa-3x"></i>
-									</a>
-								</td>
-								<td>
-									<a href="#">eeee
-										<br>
-										<i class="fa fa-folder-open fa-3x"></i>
-									</a>
-								</td>
-								<td>
-									<a href="#">ffff
-										<br>
-										<i class="fa fa-clock-o fa-3x"></i>
-									</a>
-								</td>
-							</tr>
-						</table>
-						<!--bypass第一個
-	            	<div class="col-sm-6 pricing-1-box wow fadeInUp">
-						<div class="pricing-1-box-inner">
-		                	<div class="pricing-1-box-price">
-		                		<span>$ </span><strong>12</strong><span> / month</span>
-		                	</div>
-		                    <h3>Basic</h3>
-		                    <h4>Freelancer</h4>
-		                    <div class="pricing-1-box-features">
-		                    	<ul>
-		                    		<li>1000 lorem ipsum</li>
-		                    		<li>Normal speed</li>
-		                    		<li>500 dolor sit amet</li>
-		                    		<li>300MB to save projects</li>
-		                    		<li>750 hours of support</li>
-		                    	</ul>
-		                    </div>
-		                    <div class="pricing-1-box-sign-up">
-		                    	<a class="big-link-3" href="#">Buy now</a>
-		                    </div>
-						</div>
-					</div>-->
-						<!--第二個-->
-						<!--<div class="col-sm-12 pricing-1-box pricing-1-box-best wow fadeInDown">
-                    	<div class="pricing-1-box-inner">
-		                	<div class="pricing-1-box-price">
-								<strong>管理者登入</strong>
-		                	</div>
-		                    <h3>輔大同仁請使用LDAP帳號</h3>
-		                    <h4>您可進行以下操作</h4>
-		                    <div class="pricing-1-box-features">
-		                    	<ul>
-		                    		<li>申請資料/帳號管理</li>
-		                    		<li>交換學校/審查設定</li>
-		                    		<li>修改記錄/開放時間</li>
-		                    	</ul>
-		                    </div>
-		                    <div class="pricing-1-box-sign-up">
-		                    	<a class="big-link-3" href="#">Buy now</a>
-		                    </div>
-		                </div>
-                    </div>-->
+<!--add-->
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="addTitle">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="addTitle">新增交換學校</h4>
+            </div>
+            <form action="adminTransfer.html" method="post">
+                <div class="modal-body">
+                    <table class="table customTable adminTable">
+                        <tr>
+                            <td>學校</td>
+                            <td><input type="text" name="schoolName"></td>
+                            <td>國家</td>
+                            <td>
+                                <select name="country">
+                                    <option value="cn">中國</option>
+                                    <option value="hk">香港特別行政區</option>
+                                    <option value="mo">澳門特別行政區</option>
+                                    <option value="mo">聖多美普林西比</option>
+                                    <option value="us">美國</option>
+                                    <option value="en">英國</option>
+                                    <option value="jp">日本</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                招收人數
+                            </td>
+                            <td>
+                                <input type="text" name="peopleAmount" class="form-control score">
+                            </td>
+                            <td>
+                                限制-總平均成績
+                            </td>
+                            <td>
+                                <input type="text" name="averageScore" class="form-control score" maxlength="5">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                限制-系所
+                            </td>
+                            <td>
+                                <select name="department">
+                                    <option value="none">無</option>
+                                    <option value="im">資訊管理學系</option>
+                                    <option value="mba">企業管理學系</option>
+                                    <option value="accounting">會計學系</option>
+                                </select>
+                            </td>
+                            <td>
+                                限制-學院
+                            </td>
+                            <td>
+                                <select name="college">
+                                    <option value="none">無</option>
+                                    <option value="management">管理學院</option>
+                                    <option value="se">理工學院</option>
+                                    <option value="social">社會科學院</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                限制-在校學制
+                            </td>
+                            <td>
+                                <select name="schoolSystem">
+                                    <option value="none">無</option>
+                                    <option value="bachelor">學士班</option>
+                                    <option value="master">碩士班</option>
+                                    <option value="docter">博士班</option>
+                                </select>
+                            </td>
+                            <td>
+                                限制-僅收外籍生
+                            </td>
+                            <td>
+                                <select name="foreignStudent">
+                                    <option value="none">無</option>
+                                    <option value="us">美國</option>
+                                    <option value="en">英國</option>
+                                    <option value="cn">中國</option>
+                                    <option value="hk">香港</option>
+                                    <option value="mo">澳門</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                托福總成績(TOEFLIBT):
+                            </td>
+                            <td>
+                                <input type="text" name="toefl" class="form-control score">(79~120)
+                            </td>
+                            <td style="width:50%;" colspan="2">
+                                聽:
+                                <input type="text" name="toeflListen" class="form-control score" placeholder="(0~30)">
+                                <br> 說:
+                                <input type="text" name="toeflSpeaking" class="form-control score" placeholder="(0~30)">
+                                <br> 讀:
+                                <input type="text" name="toeflReading" class="form-control score" placeholder="(0~30)">
+                                <br> 寫:
+                                <input type="text" name="toeflWriting" class="form-control score" placeholder="(0~30)">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                雅思總成績(IETLS):
+                            </td>
+                            <td>
+                                <input type="text" name="ietls" class="form-control score">
+                            </td>
+                            <td style="width:50%;" colspan="2">
+                                聽:
+                                <input type="text" name="ietlsListen" class="form-control score">
+                                <br> 說:
+                                <input type="text" name="ietlsSpeaking" class="form-control score">
+                                <br> 讀:
+                                <input type="text" name="ietlsReading" class="form-control score">
+                                <br> 寫:
+                                <input type="text" name="ietlsWriting" class="form-control score">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                多益美語(TOEIC):
+                            </td>
+                            <td>
+                                <input type="text" class="form-control score" name="toeic">
+                            </td>
+                            <td>
+                                日語檢定(JLPT):
+                            </td>
+                            <td>
+                                <select name="jlpt">
+                                    <option value="None">None</option>
+                                    <option value="N1">N1</option>
+                                    <option value="N2">N2</option>
+                                    <option value="N3">N3</option>
+                                    <option value="N4">N4</option>
+                                    <option value="N5">N5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                韓語檢定(TOPIK):
+                            </td>
+                            <td>
+                                <select name="topik">
+                                    <option value="None">None</option>
+                                    <option value="1">1級</option>
+                                    <option value="2">2級</option>
+                                    <option value="3">3級</option>
+                                    <option value="4">4級</option>
+                                    <option value="5">5級</option>
+                                    <option value="6">6級</option>
+                                </select>
+                            </td>
+                            <td>
+                                法語檢定(DELF):
+                            </td>
+                            <td>
+                                <select name="delf">
+                                    <option value="None">None</option>
+                                    <option value="delf a1">delf a1</option>
+                                    <option value="delf a2">delf a2</option>
+                                    <option value="delf b1">delf b1</option>
+                                    <option value="delf b2">delf b2</option>
+                                    <option value="dalf c1">dalf c1</option>
+                                    <option value="dalf c2">dalf c2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                西語檢定(DELE):
+                            </td>
+                            <td>
+                                <select name="dele">
+                                    <option value="None">None</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </td>
+                            <td>
+                                德語檢定(Goethe & TDN):
+                            </td>
+                            <td>
+                                <select name="Goethe">
+                                    <option value="None">None</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-custom">新增</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
-					</div>
-				</div>
-			</div>
-		</div>
+<!--edit1-->
+<div class="modal fade" id="edit1" tabindex="-1" role="dialog" aria-labelledby="edit1Title">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="edit1Title">修改交換學校</h4>
+            </div>
+            <form action="adminTransfer.html" method="post">
+                <div class="modal-body">
+                    <table class="table customTable adminTable">
+                        <tr>
+                            <th colspan="4">修改匹茲堡州立大學的資料</th>
+                        </tr>
+                        <tr>
+                            <td>學校</td>
+                            <td>
+                                <input type="text" name="schoolName" value="匹茲堡州立大學Pittsburg State University">
+                            </td>
+                            <td>國家</td>
+                            <td>
+                                <select name="country">
+                                    <option value="cn">中國</option>
+                                    <option value="hk">香港特別行政區</option>
+                                    <option value="mo">澳門特別行政區</option>
+                                    <option value="mo">聖多美普林西比</option>
+                                    <option value="us" selected>美國</option>
+                                    <option value="en">英國</option>
+                                    <option value="jp">日本</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                招收人數
+                            </td>
+                            <td>
+                                <input type="text" name="peopleAmount" class="form-control score" value="4">
+                            </td>
+                            <td>
+                                限制-總平均成績
+                            </td>
+                            <td>
+                                <input type="text" name="averageScore" class="form-control score" maxlength="5"
+                                       value="75">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                限制-系所
+                            </td>
+                            <td>
+                                <select name="department">
+                                    <option value="none" selected>無</option>
+                                    <option value="im">資訊管理學系</option>
+                                    <option value="mba">企業管理學系</option>
+                                    <option value="accounting">會計學系</option>
+                                </select>
+                            </td>
+                            <td>
+                                限制-學院
+                            </td>
+                            <td>
+                                <select name="college">
+                                    <option value="none" selected>無</option>
+                                    <option value="management">管理學院</option>
+                                    <option value="se">理工學院</option>
+                                    <option value="social">社會科學院</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                限制-在校學制
+                            </td>
+                            <td>
+                                <select name="schoolSystem">
+                                    <option value="none">無</option>
+                                    <option value="bachelor" selected>學士班</option>
+                                    <option value="master">碩士班</option>
+                                    <option value="docter">博士班</option>
+                                </select>
+                            </td>
+                            <td>
+                                限制-僅收外籍生
+                            </td>
+                            <td>
+                                <select name="foreignStudent">
+                                    <option value="none" selected>無</option>
+                                    <option value="us">美國</option>
+                                    <option value="en">英國</option>
+                                    <option value="cn">中國</option>
+                                    <option value="hk">香港</option>
+                                    <option value="mo">澳門</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                托福總成績(TOEFLIBT):
+                            </td>
+                            <td>
+                                <input type="text" name="toefl" class="form-control score" value="79">(79~120)
+                            </td>
+                            <td style="width:50%;" colspan="2">
+                                聽:
+                                <input type="text" name="toeflListen" class="form-control score" placeholder="(0~30)"
+                                       value="15">
+                                <br> 說:
+                                <input type="text" name="toeflSpeaking" class="form-control score" placeholder="(0~30)"
+                                       value="15">
+                                <br> 讀:
+                                <input type="text" name="toeflReading" class="form-control score" placeholder="(0~30)"
+                                       value="15">
+                                <br> 寫:
+                                <input type="text" name="toeflWriting" class="form-control score" placeholder="(0~30)"
+                                       value="15">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                雅思總成績(IETLS):
+                            </td>
+                            <td>
+                                <input type="text" name="ietls" class="form-control score" value="6.5">
+                            </td>
+                            <td style="width:50%;" colspan="2">
+                                聽:
+                                <input type="text" name="ietlsListen" class="form-control score" value="5">
+                                <br> 說:
+                                <input type="text" name="ietlsSpeaking" class="form-control score" value="5">
+                                <br> 讀:
+                                <input type="text" name="ietlsReading" class="form-control score" value="5">
+                                <br> 寫:
+                                <input type="text" name="ietlsWriting" class="form-control score" value="5">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                多益美語(TOEIC):
+                            </td>
+                            <td>
+                                <input type="text" class="form-control score" name="toeic" value="0">
+                            </td>
+                            <td>
+                                日語檢定(JLPT):
+                            </td>
+                            <td>
+                                <select name="jlpt">
+                                    <option value="None" selected>None</option>
+                                    <option value="N1">N1</option>
+                                    <option value="N2">N2</option>
+                                    <option value="N3">N3</option>
+                                    <option value="N4">N4</option>
+                                    <option value="N5">N5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                韓語檢定(TOPIK):
+                            </td>
+                            <td>
+                                <select name="topik">
+                                    <option value="None" selected>None</option>
+                                    <option value="1">1級</option>
+                                    <option value="2">2級</option>
+                                    <option value="3">3級</option>
+                                    <option value="4">4級</option>
+                                    <option value="5">5級</option>
+                                    <option value="6">6級</option>
+                                </select>
+                            </td>
+                            <td>
+                                法語檢定(DELF):
+                            </td>
+                            <td>
+                                <select name="delf">
+                                    <option value="None" selected>None</option>
+                                    <option value="delf a1">delf a1</option>
+                                    <option value="delf a2">delf a2</option>
+                                    <option value="delf b1">delf b1</option>
+                                    <option value="delf b2">delf b2</option>
+                                    <option value="dalf c1">dalf c1</option>
+                                    <option value="dalf c2">dalf c2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                西語檢定(DELE):
+                            </td>
+                            <td>
+                                <select name="dele">
+                                    <option value="None" selected>None</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </td>
+                            <td>
+                                德語檢定(Goethe & TDN):
+                            </td>
+                            <td>
+                                <select name="Goethe">
+                                    <option value="None" selected>None</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-custom">修改</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
-		<!-- Pricing 2 -->
-		<!--<div class="pricing-2-container">
-	        <div class="container">
-	        	<div class="row">
-		            <div class="col-sm-12 pricing-1-title wow fadeIn">
-		                <h2>暫時頁面</h2>
-		            </div>
-	            </div>
-	            <div class="row">
-	            	
-	            	<div class="col-sm-3 pricing-1-box wow fadeInUp">
-                		<div class="pricing-1-box-inner">
-		                	<div class="pricing-1-box-price">
-		                		<span>$ </span><strong>12</strong><span> / month</span>
-		                	</div>
-		                    <h3>Basic</h3>
-		                    <h4>Freelancer</h4>
-		                    <div class="pricing-1-box-features">
-		                    	<ul>
-		                    		<li>1000 lorem ipsum</li>
-		                    		<li>Normal speed</li>
-		                    		<li>500 dolor sit amet</li>
-		                    		<li>300MB to save projects</li>
-		                    		<li>750 hours of support</li>
-		                    	</ul>
-		                    </div>
-		                    <div class="pricing-1-box-sign-up">
-		                    	<a class="big-link-3" href="#">Sign up</a>
-		                    </div>
-	                    </div>
+<!--moreInfo1-->
+<div class="modal fade" id="moreInfo1" tabindex="-1" role="dialog" aria-labelledby="moreInfo1Title">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="moreInfo1Title">交換學校的詳細資料</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table customTable adminTable">
+                    <tr>
+                        <th colspan="4">匹茲堡州立大學的詳細資料</th>
+                    </tr>
+                    <tr>
+                        <td>學校</td>
+                        <td>
+                            匹茲堡州立大學Pittsburg State University
+                        </td>
+                        <td>國家</td>
+                        <td>
+                            美國
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            招收人數
+                        </td>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            限制-總平均成績
+                        </td>
+                        <td>
+                            75
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            限制-系所
+                        </td>
+                        <td>
+                            無
+                        </td>
+                        <td>
+                            限制-學院
+                        </td>
+                        <td>
+                            無
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            限制-在校學制
+                        </td>
+                        <td>
+                            學士班
+                        </td>
+                        <td>
+                            限制-僅收外籍生
+                        </td>
+                        <td>
+                            無
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            托福總成績(TOEFLIBT):
+                        </td>
+                        <td>
+                            79
+                        </td>
+                        <td style="width:50%;" colspan="2">
+                            聽: 15
+                            <br>
+                            說: 15
+                            <br>
+                            讀: 15
+                            <br>
+                            寫: 15
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            雅思總成績(IETLS):
+                        </td>
+                        <td>
+                            6.5
+                        </td>
+                        <td style="width:50%;" colspan="2">
+                            聽: 5
+                            <br>
+                            說: 5
+                            <br>
+                            讀: 5
+                            <br>
+                            寫: 5
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            多益美語(TOEIC):
+                        </td>
+                        <td>
+                            0
+                        </td>
+                        <td>
+                            日語檢定(JLPT):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            韓語檢定(TOPIK):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            法語檢定(DELF):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            西語檢定(DELE):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            德語檢定(Goethe & TDN):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-dismiss="modal">關閉</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--edit2-->
+<div class="modal fade" id="edit2" tabindex="-1" role="dialog" aria-labelledby="edit2Title">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="edit2Title">修改交換學校</h4>
+            </div>
+            <form action="adminTransfer.html" method="post">
+                <div class="modal-body">
+                    <table class="table customTable adminTable">
+                        <tr>
+                            <th colspan="4">修改天普大學的資料</th>
+                        </tr>
+                        <tr>
+                            <td>學校</td>
+                            <td>
+                                <input type="text" name="schoolName" value="(自費)天普大學Temple University">
+                            </td>
+                            <td>國家</td>
+                            <td>
+                                <select name="country">
+                                    <option value="cn">中國</option>
+                                    <option value="hk">香港特別行政區</option>
+                                    <option value="mo">澳門特別行政區</option>
+                                    <option value="mo">聖多美普林西比</option>
+                                    <option value="us" selected>美國</option>
+                                    <option value="en">英國</option>
+                                    <option value="jp">日本</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                招收人數
+                            </td>
+                            <td>
+                                <input type="text" name="peopleAmount" class="form-control score" value="10">
+                            </td>
+                            <td>
+                                限制-總平均成績
+                            </td>
+                            <td>
+                                <input type="text" name="averageScore" class="form-control score" maxlength="5"
+                                       value="75">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                限制-系所
+                            </td>
+                            <td>
+                                <select name="department">
+                                    <option value="none" selected>無</option>
+                                    <option value="im">資訊管理學系</option>
+                                    <option value="mba">企業管理學系</option>
+                                    <option value="accounting">會計學系</option>
+                                </select>
+                            </td>
+                            <td>
+                                限制-學院
+                            </td>
+                            <td>
+                                <select name="college">
+                                    <option value="none" selected>無</option>
+                                    <option value="management">管理學院</option>
+                                    <option value="se">理工學院</option>
+                                    <option value="social">社會科學院</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                限制-在校學制
+                            </td>
+                            <td>
+                                <select name="schoolSystem">
+                                    <option value="none">無</option>
+                                    <option value="bachelor" selected>學士班</option>
+                                    <option value="master">碩士班</option>
+                                    <option value="docter">博士班</option>
+                                </select>
+                            </td>
+                            <td>
+                                限制-僅收外籍生
+                            </td>
+                            <td>
+                                <select name="foreignStudent">
+                                    <option value="none" selected>無</option>
+                                    <option value="us">美國</option>
+                                    <option value="en">英國</option>
+                                    <option value="cn">中國</option>
+                                    <option value="hk">香港</option>
+                                    <option value="mo">澳門</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                托福總成績(TOEFLIBT):
+                            </td>
+                            <td>
+                                <input type="text" name="toefl" class="form-control score" value="79">(79~120)
+                            </td>
+                            <td style="width:50%;" colspan="2">
+                                聽:
+                                <input type="text" name="toeflListen" class="form-control score" placeholder="(0~30)"
+                                       value="0">
+                                <br> 說:
+                                <input type="text" name="toeflSpeaking" class="form-control score" placeholder="(0~30)"
+                                       value="0">
+                                <br> 讀:
+                                <input type="text" name="toeflReading" class="form-control score" placeholder="(0~30)"
+                                       value="0">
+                                <br> 寫:
+                                <input type="text" name="toeflWriting" class="form-control score" placeholder="(0~30)"
+                                       value="0">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                雅思總成績(IETLS):
+                            </td>
+                            <td>
+                                <input type="text" name="ietls" class="form-control score" value="6.5">
+                            </td>
+                            <td style="width:50%;" colspan="2">
+                                聽:
+                                <input type="text" name="ietlsListen" class="form-control score" value="0">
+                                <br> 說:
+                                <input type="text" name="ietlsSpeaking" class="form-control score" value="0">
+                                <br> 讀:
+                                <input type="text" name="ietlsReading" class="form-control score" value="0">
+                                <br> 寫:
+                                <input type="text" name="ietlsWriting" class="form-control score" value="0">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                多益美語(TOEIC):
+                            </td>
+                            <td>
+                                <input type="text" class="form-control score" name="toeic" value="0">
+                            </td>
+                            <td>
+                                日語檢定(JLPT):
+                            </td>
+                            <td>
+                                <select name="jlpt">
+                                    <option value="None" selected>None</option>
+                                    <option value="N1">N1</option>
+                                    <option value="N2">N2</option>
+                                    <option value="N3">N3</option>
+                                    <option value="N4">N4</option>
+                                    <option value="N5">N5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                韓語檢定(TOPIK):
+                            </td>
+                            <td>
+                                <select name="topik">
+                                    <option value="None" selected>None</option>
+                                    <option value="1">1級</option>
+                                    <option value="2">2級</option>
+                                    <option value="3">3級</option>
+                                    <option value="4">4級</option>
+                                    <option value="5">5級</option>
+                                    <option value="6">6級</option>
+                                </select>
+                            </td>
+                            <td>
+                                法語檢定(DELF):
+                            </td>
+                            <td>
+                                <select name="delf">
+                                    <option value="None" selected>None</option>
+                                    <option value="delf a1">delf a1</option>
+                                    <option value="delf a2">delf a2</option>
+                                    <option value="delf b1">delf b1</option>
+                                    <option value="delf b2">delf b2</option>
+                                    <option value="dalf c1">dalf c1</option>
+                                    <option value="dalf c2">dalf c2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                西語檢定(DELE):
+                            </td>
+                            <td>
+                                <select name="dele">
+                                    <option value="None" selected>None</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </td>
+                            <td>
+                                德語檢定(Goethe & TDN):
+                            </td>
+                            <td>
+                                <select name="Goethe">
+                                    <option value="None" selected>None</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-custom">修改</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--moreInfo2-->
+<div class="modal fade" id="moreInfo2" tabindex="-1" role="dialog" aria-labelledby="moreInfo2Title">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="moreInfo2Title">交換學校的詳細資料</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table customTable adminTable">
+                    <tr>
+                        <th colspan="4">天普大學的詳細資料</th>
+                    </tr>
+                    <tr>
+                        <td>學校</td>
+                        <td>
+                            (自費)天普大學Temple University
+                        </td>
+                        <td>國家</td>
+                        <td>
+                            美國
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            招收人數
+                        </td>
+                        <td>
+                            10
+                        </td>
+                        <td>
+                            限制-總平均成績
+                        </td>
+                        <td>
+                            75
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            限制-系所
+                        </td>
+                        <td>
+                            無
+                        </td>
+                        <td>
+                            限制-學院
+                        </td>
+                        <td>
+                            無
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            限制-在校學制
+                        </td>
+                        <td>
+                            學士班
+                        </td>
+                        <td>
+                            限制-僅收外籍生
+                        </td>
+                        <td>
+                            無
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            托福總成績(TOEFLIBT):
+                        </td>
+                        <td>
+                            79
+                        </td>
+                        <td style="width:50%;" colspan="2">
+                            聽: 0
+                            <br>
+                            說: 0
+                            <br>
+                            讀: 0
+                            <br>
+                            寫: 0
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            雅思總成績(IETLS):
+                        </td>
+                        <td>
+                            6.5
+                        </td>
+                        <td style="width:50%;" colspan="2">
+                            聽: 0
+                            <br>
+                            說: 0
+                            <br>
+                            讀: 0
+                            <br>
+                            寫: 0
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            多益美語(TOEIC):
+                        </td>
+                        <td>
+                            0
+                        </td>
+                        <td>
+                            日語檢定(JLPT):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            韓語檢定(TOPIK):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            法語檢定(DELF):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            西語檢定(DELE):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            德語檢定(Goethe & TDN):
+                        </td>
+                        <td>
+                            None
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" data-dismiss="modal">關閉</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pricing 1 -->
+<div class="pricing-1-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 pricing-1-title wow fadeIn">
+                <h2>管理者面板</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 wow fadeInDown">
+                <table class="table customTable adminTable adminTransfer">
+                    <tr>
+                        <th colspan="5"><i class="fa fa-globe"></i> 交換學校</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add">新增
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>學校</td>
+                        <td>國家</td>
+                        <td>招收人數</td>
+                        <td>詳細資料</td>
+                        <td>動作</td>
+                    </tr>
+                    <tr>
+                        <td>匹茲堡州立大學Pittsburg State University</td>
+                        <td>美國</td>
+                        <td>4</td>
+                        <td>
+                            <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#moreInfo1">
+                                詳細資料
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">刪除
+                            </button>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit1">編輯
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>天普大學Temple University</td>
+                        <td>美國</td>
+                        <td>10</td>
+                        <td>
+                            <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#moreInfo2">
+                                詳細資料
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">刪除
+                            </button>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit2">編輯
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <!--bypass第一個
+            <div class="col-sm-6 pricing-1-box wow fadeInUp">
+                <div class="pricing-1-box-inner">
+                    <div class="pricing-1-box-price">
+                        <span>$ </span><strong>12</strong><span> / month</span>
                     </div>
-                    <div class="col-sm-3 pricing-1-box pricing-1-box-best wow fadeInDown">
-                    	<div class="pricing-1-box-inner">
-		                	<div class="pricing-1-box-price">
-		                		<span>$ </span><strong>35</strong><span> / month</span>
-		                	</div>
-		                    <h3>Ultimate</h3>
-		                    <h4>Best value</h4>
-		                    <div class="pricing-1-box-features">
-		                    	<ul>
-		                    		<li>3000 lorem ipsum</li>
-		                    		<li>2x speed</li>
-		                    		<li>2000 dolor sit amet</li>
-		                    		<li>500MB to save projects</li>
-		                    		<li>900 hours of support</li>
-		                    	</ul>
-		                    </div>
-		                    <div class="pricing-1-box-sign-up">
-		                    	<a class="big-link-3" href="#">Sign up</a>
-		                    </div>
-		                </div>
+                    <h3>Basic</h3>
+                    <h4>Freelancer</h4>
+                    <div class="pricing-1-box-features">
+                        <ul>
+                            <li>1000 lorem ipsum</li>
+                            <li>Normal speed</li>
+                            <li>500 dolor sit amet</li>
+                            <li>300MB to save projects</li>
+                            <li>750 hours of support</li>
+                        </ul>
                     </div>
-                    <div class="col-sm-3 pricing-1-box wow fadeInUp">
-                    	<div class="pricing-1-box-inner">
-		                	<div class="pricing-1-box-price">
-		                		<span>$ </span><strong>75</strong><span> / month</span>
-		                	</div>
-		                    <h3>Platinum</h3>
-		                    <h4>Big company</h4>
-		                    <div class="pricing-1-box-features">
-		                    	<ul>
-		                    		<li>5000 lorem ipsum</li>
-		                    		<li>4x speed</li>
-		                    		<li>4000 dolor sit amet</li>
-		                    		<li>900MB to save projects</li>
-		                    		<li>1200 hours of support</li>
-		                    	</ul>
-		                    </div>
-		                    <div class="pricing-1-box-sign-up">
-		                    	<a class="big-link-3" href="#">Sign up</a>
-		                    </div>
-		                </div>
+                    <div class="pricing-1-box-sign-up">
+                        <a class="big-link-3" href="#">Buy now</a>
                     </div>
-                    <div class="col-sm-3 pricing-1-box wow fadeInUp">
-                    	<div class="pricing-1-box-inner">
-		                	<div class="pricing-1-box-price">
-		                		<span>$ </span><strong>120</strong><span> / month</span>
-		                	</div>
-		                    <h3>Gold</h3>
-		                    <h4>Bigger company</h4>
-		                    <div class="pricing-1-box-features">
-		                    	<ul>
-		                    		<li>7000 lorem ipsum</li>
-		                    		<li>6x speed</li>
-		                    		<li>6000 dolor sit amet</li>
-		                    		<li>2GB to save projects</li>
-		                    		<li>1500 hours of support</li>
-		                    	</ul>
-		                    </div>
-		                    <div class="pricing-1-box-sign-up">
-		                    	<a class="big-link-3" href="#">Sign up</a>
-		                    </div>
-		                </div>
+                </div>
+            </div>-->
+                <!--第二個-->
+                <!--<div class="col-sm-12 pricing-1-box pricing-1-box-best wow fadeInDown">
+                <div class="pricing-1-box-inner">
+                    <div class="pricing-1-box-price">
+                        <strong>管理者登入</strong>
                     </div>
-	            	
-	            </div>
-	        </div>
-        </div>-->
+                    <h3>輔大同仁請使用LDAP帳號</h3>
+                    <h4>您可進行以下操作</h4>
+                    <div class="pricing-1-box-features">
+                        <ul>
+                            <li>申請資料/帳號管理</li>
+                            <li>交換學校/審查設定</li>
+                            <li>修改記錄/開放時間</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-1-box-sign-up">
+                        <a class="big-link-3" href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>-->
 
-		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 footer-box wow fadeInUp">
-						<div class="footer-box-text" style="margin-top: 20px;">
-							<img src="assets/img/school/school1.png" alt="">
-						</div>
-					</div>
-					<div class="col-sm-4 footer-box wow fadeInDown">
-						<h4>系統維護單位</h4>
-						<div class="footer-box-text">
-							<p>國教處國際學生中心</p>
-							<p>業務承辦人：林姿儀</p>
-							<p>輔仁大學連絡分機：2386</p>
-							<p><a href="http://isc.oie.fju.edu.tw/">更多資訊...</a></p>
-						</div>
-					</div>
-					<div class="col-sm-4 footer-box wow fadeInUp">
-						<h4>聯絡我們</h4>
-						<div class="footer-box-text footer-box-text-contact">
-							<p>國際學生中心</p>
-							<p><i class="fa fa-map-marker"></i> 地址: 24205 新北市新莊區中正路510號 耕莘樓A113/A111室</p>
-							<p><i class="fa fa-phone"></i> 電話: +886 2 2905 2944</p>
-							<p><i class="fa fa-envelope"></i> Email: <a href="mailto:isc@mail.fju.edu.tw">isc@mail.fju.edu.tw</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 wow fadeIn">
-						<div class="footer-border"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 footer-copyright wow fadeIn">
-						<p> Copyright 1982-2018 天主教輔仁大學 / 國際及兩岸教育處 - All rights reserved. Template by <a href="http://azmind.com/free-bootstrap-themes-templates/">Azmind</a>.</p>
-					</div>
-					<!--<div class="col-sm-5 footer-social wow fadeIn">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </div>-->
-				</div>
-			</div>
-		</footer>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<!-- Javascript -->
-		<script src="assets/js/jquery-1.11.1.min.js"></script>
-		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-		<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
-		<script src="assets/js/jquery.backstretch.min.js"></script>
-		<script src="assets/js/wow.min.js"></script>
-		<script src="assets/js/retina-1.1.0.min.js"></script>
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<script src="assets/flexslider/jquery.flexslider-min.js"></script>
-		<script src="assets/js/jflickrfeed.min.js"></script>
-		<script src="assets/js/masonry.pkgd.min.js"></script>
-		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-		<script src="assets/js/jquery.ui.map.min.js"></script>
-		<script src="assets/js/scripts.js"></script>
+<!-- Pricing 2 -->
+<!--<div class="pricing-2-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 pricing-1-title wow fadeIn">
+                <h2>暫時頁面</h2>
+            </div>
+        </div>
+        <div class="row">
 
-	</body>
+            <div class="col-sm-3 pricing-1-box wow fadeInUp">
+                <div class="pricing-1-box-inner">
+                    <div class="pricing-1-box-price">
+                        <span>$ </span><strong>12</strong><span> / month</span>
+                    </div>
+                    <h3>Basic</h3>
+                    <h4>Freelancer</h4>
+                    <div class="pricing-1-box-features">
+                        <ul>
+                            <li>1000 lorem ipsum</li>
+                            <li>Normal speed</li>
+                            <li>500 dolor sit amet</li>
+                            <li>300MB to save projects</li>
+                            <li>750 hours of support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-1-box-sign-up">
+                        <a class="big-link-3" href="#">Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pricing-1-box pricing-1-box-best wow fadeInDown">
+                <div class="pricing-1-box-inner">
+                    <div class="pricing-1-box-price">
+                        <span>$ </span><strong>35</strong><span> / month</span>
+                    </div>
+                    <h3>Ultimate</h3>
+                    <h4>Best value</h4>
+                    <div class="pricing-1-box-features">
+                        <ul>
+                            <li>3000 lorem ipsum</li>
+                            <li>2x speed</li>
+                            <li>2000 dolor sit amet</li>
+                            <li>500MB to save projects</li>
+                            <li>900 hours of support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-1-box-sign-up">
+                        <a class="big-link-3" href="#">Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pricing-1-box wow fadeInUp">
+                <div class="pricing-1-box-inner">
+                    <div class="pricing-1-box-price">
+                        <span>$ </span><strong>75</strong><span> / month</span>
+                    </div>
+                    <h3>Platinum</h3>
+                    <h4>Big company</h4>
+                    <div class="pricing-1-box-features">
+                        <ul>
+                            <li>5000 lorem ipsum</li>
+                            <li>4x speed</li>
+                            <li>4000 dolor sit amet</li>
+                            <li>900MB to save projects</li>
+                            <li>1200 hours of support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-1-box-sign-up">
+                        <a class="big-link-3" href="#">Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pricing-1-box wow fadeInUp">
+                <div class="pricing-1-box-inner">
+                    <div class="pricing-1-box-price">
+                        <span>$ </span><strong>120</strong><span> / month</span>
+                    </div>
+                    <h3>Gold</h3>
+                    <h4>Bigger company</h4>
+                    <div class="pricing-1-box-features">
+                        <ul>
+                            <li>7000 lorem ipsum</li>
+                            <li>6x speed</li>
+                            <li>6000 dolor sit amet</li>
+                            <li>2GB to save projects</li>
+                            <li>1500 hours of support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-1-box-sign-up">
+                        <a class="big-link-3" href="#">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>-->
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 footer-box wow fadeInUp">
+                <div class="footer-box-text" style="margin-top: 20px;">
+                    <img src="assets/img/school/school1.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-4 footer-box wow fadeInDown">
+                <h4>系統維護單位</h4>
+                <div class="footer-box-text">
+                    <p>國教處國際學生中心</p>
+                    <p>業務承辦人：林姿儀</p>
+                    <p>輔仁大學連絡分機：2386</p>
+                    <p><a href="http://isc.oie.fju.edu.tw/">更多資訊...</a></p>
+                </div>
+            </div>
+            <div class="col-sm-4 footer-box wow fadeInUp">
+                <h4>聯絡我們</h4>
+                <div class="footer-box-text footer-box-text-contact">
+                    <p>國際學生中心</p>
+                    <p><i class="fa fa-map-marker"></i> 地址: 24205 新北市新莊區中正路510號 耕莘樓A113/A111室</p>
+                    <p><i class="fa fa-phone"></i> 電話: +886 2 2905 2944</p>
+                    <p><i class="fa fa-envelope"></i> Email: <a
+                            href="mailto:isc@mail.fju.edu.tw">isc@mail.fju.edu.tw</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 wow fadeIn">
+                <div class="footer-border"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 footer-copyright wow fadeIn">
+                <p> Copyright 1982-2018 天主教輔仁大學 / 國際及兩岸教育處 - All rights reserved. Template by <a
+                        href="http://azmind.com/free-bootstrap-themes-templates/">Azmind</a>.</p>
+            </div>
+            <!--<div class="col-sm-5 footer-social wow fadeIn">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>-->
+        </div>
+    </div>
+</footer>
+
+<!-- Javascript -->
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/retina-1.1.0.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/flexslider/jquery.flexslider-min.js"></script>
+<script src="assets/js/jflickrfeed.min.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="assets/js/jquery.ui.map.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+</body>
 
 </html>

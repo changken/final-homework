@@ -275,3 +275,8 @@ table.customTable.adminApply tr:hover td{
 table.customTable.adminApply tr.adminApplyRow td{
     width:17%;
 }
+
+/*adminTransfer*/
+table.customTable.adminTable.adminTransfer tr td{
+    width: 20%;
+}
