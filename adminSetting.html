@@ -122,6 +122,29 @@
 			</div>
 		</div>
 
+		<!--modal-->
+		<div class="modal fade" id="saveSetting" tabindex="-1" role="dialog" aria-labelledby="saveSettingTitle">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="saveSettingTitle">修改成功！</h4>
+					</div>
+					<div class="modal-body">
+						<div class="alert alert-success" role="alert">
+							<p>審查設定已成功修改！</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<form action="adminSetting.html" method="POST">
+							<button type="submit" class="btn btn-primary">確定</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Pricing 1 -->
 		<div class="pricing-1-container">
@@ -158,8 +181,13 @@
 							</tr>
 							<tr>
 								<td>
-									<button type="button" class="btn btn-custom">提交</button>
+									<button type="button" class="btn btn-custom" data-toggle="modal" data-target="#saveSetting">提交</button>
 									<button type="reset" class="btn btn-custom">重設</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button type="button" class="btn btn-custom btn-admin" onclick="document.location.href='adminCenter.html';">回主選單</button>
 								</td>
 							</tr>
 						</table>

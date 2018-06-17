@@ -21,9 +21,9 @@ jQuery(document).ready(function() {
 		這裡是主頁面的輪播照片array
 	*/
 	$('.slider-2-container').backstretch([
-	  "assets/img/slider/5.jpg"
-	, "assets/img/slider/6.jpg"
-	, "assets/img/slider/7.jpg"
+	  "assets/img/school/slider/1.jpg"
+	, "assets/img/school/slider/2.jpg"
+	, "assets/img/school/slider/3.jpg"
 	], {duration: 3000, fade: 750});
 	
 	/*

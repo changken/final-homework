@@ -95,9 +95,24 @@ table.customTable input[type=file]{
     width: 50%;
 }
 
+/*custom button*/
 button.btn.btn-custom{
     font-size: 18px;
     border-radius: 2px;
+}
+
+/*back to admin menu button*/
+button.btn.btn-custom.btn-admin{
+    background-color: #7b7b7b;
+    font-size: 24px;
+    margin-bottom: 1px;
+}
+
+button.btn.btn-custom.btn-admin:hover{
+    background-color: white;
+    color: #7b7b7b;
+    border: 3px solid #7b7b7b;
+    height: 40px;
 }
 
 /*Reg Table*/
