@@ -133,50 +133,33 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 wow fadeInDown">
-						<table class="table customTable adminTable adminCenter">
+						<table class="table customTable adminTable">
 							<tr>
-								<th colspan="3">申請資料</th>
+								<th><i class="fa fa-cog fa-2x"></i> 審查設定</th>
 							</tr>
 							<tr>
-								<td>
-									<a href="#">aaaa
-										<br>
-										<i class="fa fa-file-text fa-3x"></i>
-									</a>
-								</td>
-								<td>
-									<a href="#">bbbb
-										<br>
-										<i class="fa fa-key fa-3x"></i>
-									</a>
-								</td>
-								<td>
-									<a href="#">cccc
-										<br>
-										<i class="fa fa-globe fa-3x"></i>
-									</a>
+								<td style="background-color:#d2ebff;">選擇教師審查委員<br><br>
+									1.複選請按住<b><u>Ctrl鍵+滑鼠</u></b>點選。<br><br>
+									2.目前填寫完畢之申請學生人數為: <b>1</b>人。<br><br>
+									3.請先確保學生填寫完畢，再進行指派教師審查委員。<br><br>
+									4.點選後，系統將自動指派學生名單給各教師(評分配置表將重新分配)。
 								</td>
 							</tr>
 							<tr>
-								<td>
-									<!--我想改成apple setting icon
-								old driver!-->
-									<a href="#">dddd
-										<br>
-										<i class="fa fa-cog fa-3x"></i>
-									</a>
+								<td valign="top">選擇教師
+									<select name="teacher" multiple>
+										<option value="teacher001">teacher001</option>
+										<option value="teacher002">teacher002</option>
+										<option value="teacher003">teacher003</option>
+										<option value="teacher004">teacher004</option>
+										<option value="teacher005">teacher005</option>
+									</select>
 								</td>
+							</tr>
+							<tr>
 								<td>
-									<a href="#">eeee
-										<br>
-										<i class="fa fa-folder-open fa-3x"></i>
-									</a>
-								</td>
-								<td>
-									<a href="#">ffff
-										<br>
-										<i class="fa fa-clock-o fa-3x"></i>
-									</a>
+									<button type="button" class="btn btn-custom">提交</button>
+									<button type="reset" class="btn btn-custom">重設</button>
 								</td>
 							</tr>
 						</table>
